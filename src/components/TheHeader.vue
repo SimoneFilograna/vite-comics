@@ -52,18 +52,20 @@ export default{
 </script>
 
 <template>
-    <div class="container">
-        <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="">
+            </div>
+            <div class="list-menu">
+                <ul class="nav">
+                    <li class="nav-item" v-for="singleItem in navItem">
+                        <a href="#" class="nav-link">{{singleItem.name}}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="list-menu">
-            <ul class="nav">
-                <li class="nav-item" v-for="singleItem in navItem">
-                    <a href="#" class="nav-link">{{singleItem.name}}</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </header>
 </template>
 
 <style lang="scss" scoped>
