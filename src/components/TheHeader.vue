@@ -4,15 +4,15 @@ export default{
         return{
             navItem: [
                 {
-                    name: "Character",
+                    name: "CHARACTERS",
                     link: "/"
                 },
                 {
-                    name: "Comics",
+                    name: "COMICS",
                     link: "/"
                 },
                 {
-                    name: "Movies",
+                    name: "MOVIES",
                     link: "/"
                 },
                 {
@@ -20,27 +20,27 @@ export default{
                     link: "/"
                 },
                 {
-                    name: "Games",
+                    name: "GAMES",
                     link: "/"
                 },
                 {
-                    name: "Collectibles",
+                    name: "COLLECTIBLES",
                     link: "/"
                 },
                 {
-                    name: "Videos",
+                    name: "VIDEOS",
                     link: "/"
                 },
                 {
-                    name: "Fans",
+                    name: "FANS",
                     link: "/"
                 },
                 {
-                    name: "News",
+                    name: "NEWS",
                     link: "/"
                 },
                 {
-                    name: "Shop",
+                    name: "SHOP",
                     link: "/"
                 },
                 
@@ -62,7 +62,7 @@ export default{
             <div class="list-menu">
                 <ul class="nav">
                     <li class="nav-item" v-for="singleItem in navItem">
-                        <a href="#" class="nav-link">{{singleItem.name}}</a>
+                        <a href="#" class="nav-link p-3">{{singleItem.name}}</a>
                     </li>
                 </ul>
             </div>
@@ -96,7 +96,11 @@ export default{
         color: variables.$color-primary;
         };
     };
-                
+    
+    .nav-item{
+        font-size: 1rem;
+        font-weight: 500;
+    }
             
         
 
