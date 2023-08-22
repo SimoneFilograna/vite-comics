@@ -54,9 +54,11 @@ export default{
 <template>
     <header>
         <div class="container">
+
             <div class="logo">
                 <img src="../assets/img/dc-logo.png" alt="">
             </div>
+
             <div class="list-menu">
                 <ul class="nav">
                     <li class="nav-item" v-for="singleItem in navItem">
@@ -77,28 +79,23 @@ export default{
         @include mixins.center;
         padding: 2rem;
         justify-content: space-between;
+    }
 
-        .logo{
-            img{
-                width: 80px;
-            };
+    .logo{
+        img{
+            width: 80px;
         };
+    };
+    
+    .nav-link{
+        color: variables.$text-dark-grey;
 
-        .list-menu{
-            .nav{
-                .nav-item {
-                    .nav-link{
-                        color: variables.$text-dark-grey;
-
-                        &:hover {
-                            color: variables.$color-primary;
-                        };
-                    };
-                };
-            }
-        }
-
+    &:hover {
+        color: variables.$color-primary;
+        };
+    };
+                
+            
         
 
-    }
 </style>

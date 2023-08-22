@@ -132,15 +132,15 @@ export default{
 
 <template>
     <footer>
-        <div class="container">
-            <div class="credits">
-                <div class="raw">
-                    <div class="col-4" v-for="singleCredit in credits">
+        <div class="container d-flex">
+            <div class="credits pt-4">
+                <div class="row align-items-start">
+                    <div class="col-4 d-flex" v-for="singleCredit in credits">
                         <div class="box text-white">
                             <h4 class="foot-title">{{ singleCredit.credTitle }}</h4>
                             <ul>
                                 <li v-for="singleRef in singleCredit.linkedElements">
-                                    <a href="#"> {{singleRef.name}}</a>
+                                    <a href="#" class="text-link">{{singleRef.name}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -148,7 +148,9 @@ export default{
                     
                 </div>
             </div>
-            <div class="big-image"></div>
+            <div class="big-image text-white">
+                asdasjdasdas
+            </div>
         </div>
     </footer>
 </template>
@@ -158,6 +160,12 @@ export default{
 
     footer{
         background-image: url(../assets/img/footer-bg.jpg);
+
+        .container{
+
+            
+        }
+
     }
 
 </style>
