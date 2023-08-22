@@ -134,7 +134,7 @@ export default{
     <footer>
         <div class="maxi-container-foot">
 
-            <div class="container d-flex">
+            <div class="container d-flex justify-content-between">
                 <div class="credits pt-4">
                     <div class="row align-items-start">
                         <div class="col-4 d-flex" v-for="singleCredit in credits">
@@ -150,9 +150,7 @@ export default{
                         
                     </div>
                 </div>
-                <div class="big-image text-white">
-                    <img class="logo-foot" src="../assets/img/dc-logo-bg.png" alt="">
-                </div>
+                <div class="big-image"></div>
             </div>
         </div>
 
@@ -198,8 +196,6 @@ export default{
     .maxi-container-foot{
         background-image: url(../assets/img/footer-bg.jpg);
         background-size: cover;
-        padding-bottom: 2rem;
-        padding-top: 1rem;
     }
 
     .credits{
@@ -218,11 +214,12 @@ export default{
         font-size: .8rem;
     }
 
-    .logo-foot{
-        position: absolute;
-        right: 20%;
-        bottom: 10%;
-        
+    .big-image{
+        background-image: url(../assets/img/dc-logo-bg.png);
+        width: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
     
     .btn{
