@@ -5,5 +5,16 @@ export default{
 </script>
 
 <template>
-    <h1>prova header</h1>
+    <div class="header-container">
+        <div class="logo">
+            <img src="../assets/img/dc-logo.png" alt="">
+        </div>
+        <div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">tgftyftff</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </template>
