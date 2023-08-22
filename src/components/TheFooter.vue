@@ -137,8 +137,8 @@ export default{
                 <div class="row align-items-start">
                     <div class="col-4 d-flex" v-for="singleCredit in credits">
                         <div class="box text-white">
-                            <h4 class="foot-title">{{ singleCredit.credTitle }}</h4>
-                            <ul>
+                            <h5 class="foot-title pb-2">{{ singleCredit.credTitle }}</h5>
+                            <ul class="credits-list">
                                 <li v-for="singleRef in singleCredit.linkedElements">
                                     <a href="#" class="text-link">{{singleRef.name}}</a>
                                 </li>
@@ -160,12 +160,21 @@ export default{
 
     footer{
         background-image: url(../assets/img/footer-bg.jpg);
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    };
 
-        .container{
-
-            
-        }
-
+    .credits-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
+
+    .text-link{
+        text-decoration: none;
+        color: variables.$text-grey;
+        font-size: .7rem;
+    }
+    
 
 </style>
