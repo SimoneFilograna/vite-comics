@@ -1,5 +1,52 @@
 <script>
 export default{
+    data(){
+        return{
+            navItem: [
+                {
+                    name: "Character",
+                    link: "/"
+                },
+                {
+                    name: "Comics",
+                    link: "/"
+                },
+                {
+                    name: "Movies",
+                    link: "/"
+                },
+                {
+                    name: "TV",
+                    link: "/"
+                },
+                {
+                    name: "Games",
+                    link: "/"
+                },
+                {
+                    name: "Collectibles",
+                    link: "/"
+                },
+                {
+                    name: "Videos",
+                    link: "/"
+                },
+                {
+                    name: "Fans",
+                    link: "/"
+                },
+                {
+                    name: "News",
+                    link: "/"
+                },
+                {
+                    name: "Shop",
+                    link: "/"
+                },
+                
+            ]
+        }
+    }
 
 }
 </script>
@@ -11,10 +58,13 @@ export default{
         </div>
         <div>
             <ul class="nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">tgftyftff</a>
+                <li class="nav-item" v-for="singleItem in navItem">
+                    <a href="#" class="nav-link">{{singleItem.name}}</a>
                 </li>
             </ul>
         </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+</style>
