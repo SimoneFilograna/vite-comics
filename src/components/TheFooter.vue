@@ -215,13 +215,14 @@ export default{
     .text-link{
         text-decoration: none;
         color: variables.$text-grey;
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .logo-foot{
         position: absolute;
         right: 20%;
         bottom: 10%;
+        
     }
     
     .btn{

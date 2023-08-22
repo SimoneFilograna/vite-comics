@@ -79,7 +79,7 @@ export default{
     }
     .container{
         @include mixins.center;
-        padding: 2rem;
+        padding: 1rem;
         justify-content: space-between;
     }
 
