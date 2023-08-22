@@ -36,6 +36,7 @@ export default{
 
     .box{
       padding: 4rem 0;
+      
       h2{
         color: white;
       }
