@@ -98,7 +98,7 @@ export default{
     };
     
     .nav-item{
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 700;
     }
             
