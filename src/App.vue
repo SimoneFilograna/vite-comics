@@ -13,17 +13,21 @@ export default{
 
 <template>
 
-  <TheHeader></TheHeader>
+  <body>
+    <TheHeader></TheHeader>
 
-  <main>
-    <div class="container">
-      <div class="box">
-        <h2>Content goes here</h2>
+    <main>
+      <div class="container">
+        <div class="box">
+          <h2>Content goes here</h2>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <TheFooter></TheFooter>
+    <TheFooter></TheFooter>
+  </body>
+
+  
 
 </template>
 
@@ -31,12 +35,16 @@ export default{
   @use "../src/styles/partials/variables";
   @use "../src/styles/partials/mixins";
 
+  body{
+    background-color: variables.$color-secondary-light;
+  }
+
   main{
     background-color: variables.$color-secondary-dark;
 
     .box{
       padding: 4rem 0;
-      
+
       h2{
         color: white;
       }

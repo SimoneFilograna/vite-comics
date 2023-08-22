@@ -74,7 +74,9 @@ export default{
     @use "../styles/partials/variables";
     @use "../styles/partials/mixins";
 
-
+    header{
+        background-color: white
+    }
     .container{
         @include mixins.center;
         padding: 2rem;
