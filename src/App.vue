@@ -44,8 +44,11 @@ export default{
              :img="singleComic.thumb"
              :name="singleComic.series" >
             </ComicCard>
-
           </div>
+        </div>
+
+        <div class="text-center">
+          <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold" href="#" role="button">LOAD MORE</a>
         </div>
       </div>
 
