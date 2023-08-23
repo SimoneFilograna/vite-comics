@@ -11,7 +11,7 @@ export default {
     <div class="card">
         <img :src="img" class="card-img-top" alt="">
         <div class="card-body">
-            <p class="card-text">{{name}}</p>
+            <p class="card-text">{{name.toUpperCase()}}</p>
         </div>
     </div>
 </template>
