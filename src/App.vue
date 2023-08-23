@@ -31,8 +31,13 @@ export default{
     <main>
       <div class="jumbotron"></div>
 
-      <div class="container">
-        <div class="row">
+      <div class="container pt-5 position-relative">
+
+        <div>
+          <a class="btn btn-primary current-button" href="#" role="button">CURRENT SERIES</a>
+        </div>
+
+        <div class="row g-4">
           <div class="col-2" v-for="(singleComic, i) in Comics" :key="i">
 
             <ComicCard
@@ -70,14 +75,14 @@ export default{
 
   main{
     background-color: variables.$color-secondary-dark;
+  }
 
-    .box{
-      padding: 4rem 0;
-
-      h2{
-        color: white;
-      }
-    }
+  .current-button{
+    background-color: variables.$color-primary;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -20px;
+    left: -10px;
   }
 
 </style>

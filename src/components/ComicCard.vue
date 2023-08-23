@@ -22,7 +22,9 @@ export default {
         background-color: transparent;
 
         .card-img-top{
-        aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: top;
+            aspect-ratio: 1/1;
     }
         .card-body{
             padding: 1rem 0;
