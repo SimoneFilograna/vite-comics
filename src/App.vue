@@ -48,7 +48,7 @@ export default{
         </div>
 
         <div class="text-center">
-          <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold" href="#" role="button">LOAD MORE</a>
+          <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" href="#" role="button">LOAD MORE</a>
         </div>
       </div>
 
@@ -89,6 +89,10 @@ export default{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-weight: 600;
+  }
+
+  .bottom-button{
+    background-color: variables.$color-primary;
   }
 
 </style>
