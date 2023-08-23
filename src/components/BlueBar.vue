@@ -41,12 +41,12 @@
 
 <template>
     <div class="blue-container">
-        <div class="container big-merch-container">
-            <div class="merchbox text-white d-flex align-items-center p-4" v-for="singleMerch in merch">
+        <div class="big-merch-container">
+            <div class="merchbox text-white d-flex align-items-center gap-3" v-for="singleMerch in merch">
                 <div class="logo-merch-cont">
                     <img :src="imgPath(singleMerch.logoMerch)" alt="" class="logo-merch-item">
                 </div>
-                <span class="px-3">{{singleMerch.merchName}}</span>
+                <a href="#">{{singleMerch.merchName}}</a>
             </div>
         </div>
     </div>
@@ -62,10 +62,17 @@
 
     .big-merch-container{
         @include mixins.centered-content;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
     };
 
     .logo-merch-item{
-        width: 40px;
+        width: 50px;
     }
 
 
