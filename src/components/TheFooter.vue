@@ -164,19 +164,29 @@ export default{
                         <a href="#" class="follow-title">FOLLOW US</a>
                     </div>
                     <div>
-                        <img src="../assets/img/footer-facebook.png" alt="">
+                        <a href="https://www.facebook.com/dc/?locale=it_IT">
+                            <img src="../assets/img/footer-facebook.png" alt="">
+                        </a>
                     </div>
                     <div>
-                        <img src="../assets/img/footer-twitter.png" alt="">
+                        <a href="https://twitter.com/DCOfficial">
+                            <img src="../assets/img/footer-twitter.png" alt="">
+                        </a>
                     </div>
                     <div>
-                        <img src="../assets/img/footer-youtube.png" alt="">
+                        <a href="https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg">
+                            <img src="../assets/img/footer-youtube.png" alt="">
+                        </a>
                     </div>
                     <div>
-                        <img src="../assets/img/footer-pinterest.png" alt="">
+                        <a href="https://www.pinterest.it/dccomics/">
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                        </a>
                     </div>
                     <div>
-                        <img src="../assets/img/footer-periscope.png" alt="">
+                        <a href="https://www.pscp.tv/">
+                            <img src="../assets/img/footer-periscope.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
