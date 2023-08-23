@@ -100,7 +100,7 @@ export default{
     .nav-item{
         font-size: .8rem;
         font-weight: 700;
-    }
+    };
             
         
 
