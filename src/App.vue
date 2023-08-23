@@ -18,6 +18,8 @@ export default{
   <body>
     <TheHeader></TheHeader>
 
+    <div class="jumbotron"></div>
+
     <main>
       <div class="container">
         <div class="box">
@@ -40,6 +42,11 @@ export default{
 
   body{
     background-color: variables.$color-secondary-light;
+  }
+
+  .jumbotron{
+    background-image: url(./assets/img/jumbotron.jpg);
+    height: 400px;
   }
 
   main{
