@@ -15,3 +15,21 @@ export default {
         </div>
     </div>
 </template>
+
+<style lang="scss" scope>
+
+    .card{
+        background-color: transparent;
+
+        .card-img-top{
+        aspect-ratio: 1/1;
+    }
+        .card-body{
+            padding: 1rem 0;
+            color: white;
+        }
+    }
+
+    
+</style>
+
