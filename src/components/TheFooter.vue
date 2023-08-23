@@ -135,11 +135,11 @@ export default{
         <div class="maxi-container-foot">
 
             <div class="container d-flex justify-content-between">
-                <div class="credits pt-4">
+                <div class="credits pt-5">
                     <div class="row align-items-start pb-4 pt-2npo">
                         <div class="col-4 d-flex" v-for="singleCredit in credits">
                             <div class="box text-white">
-                                <h5 class="foot-title pb-2">{{ singleCredit.credTitle }}</h5>
+                                <h5 class="foot-title pb-2 fw-bold">{{ singleCredit.credTitle }}</h5>
                                 <ul class="credits-list">
                                     <li v-for="singleRef in singleCredit.linkedElements">
                                         <a href="#" class="text-link">{{singleRef.name}}</a>
