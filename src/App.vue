@@ -83,6 +83,9 @@ export default{
     position: absolute;
     top: -20px;
     left: -10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 600;
   }
 
 </style>
