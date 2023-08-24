@@ -67,10 +67,6 @@ export default{
   @use "../src/styles/partials/variables";
   @use "../src/styles/partials/mixins";
 
-  body{
-    background-color: variables.$color-secondary-light;
-  }
-
   .jumbotron{
     background-image: url(./assets/img/jumbotron.jpg);
     height: 400px;
