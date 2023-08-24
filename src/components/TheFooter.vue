@@ -211,26 +211,18 @@ export default{
                 .credits{
                     position: relative;
                     
-                    .row{
+                    .credits-list{
 
-                        .col-4{
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
 
-                            .box{
-
-                                .credits-list{
-                                    list-style: none;
-                                    margin: 0;
-                                    padding: 0;
-
-                                    li{
+                        li{
                                         
-                                        .text-link{
-                                            text-decoration: none;
-                                            color: variables.$text-grey;
-                                            font-size: .8rem;
-                                        }
-                                    }
-                                }
+                            .text-link{
+                                text-decoration: none;
+                                color: variables.$text-grey;
+                                font-size: .8rem;
                             }
                         }
                     }
@@ -249,14 +241,11 @@ export default{
                 
                 .container{
 
-                    .button-cont{
-
-                        .btn{
-                            border-radius: 0%;
-                            border: 2px solid variables.$color-primary;
-                            font-size: 1rem;
-                            color: white;
-                        }
+                    .btn{
+                        border-radius: 0%;
+                        border: 2px solid variables.$color-primary;
+                        font-size: 1rem;
+                        color: white;
                     }
 
                     .ref{
