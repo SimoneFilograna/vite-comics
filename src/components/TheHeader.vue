@@ -95,6 +95,11 @@ export default{
     &:hover {
         color: variables.$color-primary;
         };
+
+    &:focus {
+        color: variables.$color-primary;
+        };
+
     };
     
     .nav-item{
