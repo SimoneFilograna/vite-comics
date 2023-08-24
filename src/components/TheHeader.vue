@@ -76,49 +76,60 @@ export default{
     @use "../styles/partials/mixins";
 
     header{
-        background-color: white
-    }
-    .container{
+        background-color: white;
+
+        .container{
         @include mixins.center;
-        padding: 1rem;
-        justify-content: space-between;
+            padding: 1rem;
+            justify-content: space-between;
+
+            .logo{
+                img{
+                    width: 80px;
+                };
+            };
+
+            .list-menu{
+                nav{
+                    .nav-item{
+                        font-size: .8rem;
+                        font-weight: 700;
+                        position: relative;
+
+                    &:hover .line-under {
+                        opacity: 1
+                    }
+                        .line-under{
+                            width: 100%;
+                            border: 3px solid variables.$color-primary;
+                            position: absolute;
+                            bottom: -2rem;
+                            opacity: 0;
+                        }
+
+                        .nav-link{
+                            color: variables.$text-dark-grey;
+
+                        &:hover {
+                            color: variables.$color-primary;
+                            };
+
+                        &:focus {
+                            color: variables.$color-primary;
+                            };
+                        };
+                    };
+                }
+            }
+        }       
     }
-
-    .logo{
-        img{
-            width: 80px;
-        };
-    };
     
-    .nav-link{
-        color: variables.$text-dark-grey;
 
-    &:hover {
-        color: variables.$color-primary;
-        };
-
-    &:focus {
-        color: variables.$color-primary;
-        };
-
-    };
     
-    .nav-item{
-        font-size: .8rem;
-        font-weight: 700;
-        position: relative;
-
-        &:hover .line-under {
-            opacity: 1
-        }
-        .line-under{
-            width: 100%;
-            border: 3px solid variables.$color-primary;
-            position: absolute;
-            bottom: -2rem;
-            opacity: 0;
-        }
-    };
+    
+    
+    
+    
 
     
     
