@@ -111,18 +111,17 @@ export default{
         &:hover .line-under {
             opacity: 1
         }
-
+        .line-under{
+            width: 100%;
+            border: 3px solid variables.$color-primary;
+            position: absolute;
+            bottom: -2rem;
+            opacity: 0;
+        }
     };
 
     
-    .line-under{
-        width: 100%;
-        border: 3px solid variables.$color-primary;
-        position: absolute;
-        bottom: -2rem;
-        opacity: 0;
-
-    }
+    
             
         
 

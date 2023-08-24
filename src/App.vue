@@ -69,27 +69,33 @@ export default{
 
   
   main{
-    background-color: variables.$color-secondary-dark;
-  }
-  
-  .jumbotron{
-    background-image: url(./assets/img/jumbotron.jpg);
-    height: 400px;
-  }
-  
-  .current-button{
-    background-color: variables.$color-primary;
-    font-size: 1.5rem;
-    position: absolute;
-    top: -20px;
-    left: -10px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-weight: 600;
-  }
+    background-color: variables.$color-secondary-dark; 
 
-  .bottom-button{
-    background-color: variables.$color-primary;
+    .jumbotron{
+      background-image: url(./assets/img/jumbotron.jpg);
+      height: 400px;
+    }
+
+    .container{
+      .current-button{
+      background-color: variables.$color-primary;
+      font-size: 1.5rem;
+      position: absolute;
+      top: -20px;
+      left: -10px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      font-weight: 600;
+      }
+
+      .bottom-button{
+        background-color: variables.$color-primary;
+      }
+    }
   }
+  
+  
+
+  
 
 </style>
