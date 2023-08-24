@@ -201,49 +201,90 @@ export default{
 
     footer{
         background-color: variables.$color-secondary-light;
+
+        .maxi-container-foot{
+            background-image: url(../assets/img/footer-bg.jpg);
+            background-size: cover;
+
+            .container{
+
+                .credits{
+                    position: relative;
+                    
+                    .row{
+
+                        .col-4{
+
+                            .box{
+
+                                .credits-list{
+                                    list-style: none;
+                                    margin: 0;
+                                    padding: 0;
+
+                                    li{
+                                        
+                                        .text-link{
+                                            text-decoration: none;
+                                            color: variables.$text-grey;
+                                            font-size: .8rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .big-image{
+                    background-image: url(../assets/img/dc-logo-bg.png);
+                    width: 600px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+
+            .last-foot-container{
+                
+                .container{
+
+                    .button-cont{
+
+                        .btn{
+                            border-radius: 0%;
+                            border: 2px solid variables.$color-primary;
+                            font-size: 1rem;
+                            color: white;
+                        }
+                    }
+
+                    .ref{
+
+                        .follow-title{
+                            font-size: 1.2rem;
+                            text-decoration: none;
+                            color: variables.$color-primary;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
     };
 
-    .maxi-container-foot{
-        background-image: url(../assets/img/footer-bg.jpg);
-        background-size: cover;
-    }
-
-    .credits{
-        position: relative;
-    }
-
-    .credits-list{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .text-link{
-        text-decoration: none;
-        color: variables.$text-grey;
-        font-size: .8rem;
-    }
-
-    .big-image{
-        background-image: url(../assets/img/dc-logo-bg.png);
-        width: 600px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
     
-    .btn{
-        border-radius: 0%;
-        border: 2px solid variables.$color-primary;
-        font-size: 1rem;
-        color: white;
-    }
+
     
-    .follow-title{
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: variables.$color-primary;
-        font-weight: 600;
-    }
+
+    
+
+   
+
+   
+    
+    
+    
+    
 
 </style>
