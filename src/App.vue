@@ -67,15 +67,16 @@ export default{
   @use "../src/styles/partials/variables";
   @use "../src/styles/partials/mixins";
 
+  
+  main{
+    background-color: variables.$color-secondary-dark;
+  }
+  
   .jumbotron{
     background-image: url(./assets/img/jumbotron.jpg);
     height: 400px;
   }
-
-  main{
-    background-color: variables.$color-secondary-dark;
-  }
-
+  
   .current-button{
     background-color: variables.$color-primary;
     font-size: 1.5rem;
