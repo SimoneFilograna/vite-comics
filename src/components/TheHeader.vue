@@ -114,6 +114,7 @@ export default{
 
     };
 
+    
     .line-under{
         width: 100%;
         border: 3px solid variables.$color-primary;
