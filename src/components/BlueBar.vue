@@ -58,22 +58,25 @@
 
     .blue-container{
         background-color: variables.$color-primary;
+        .big-merch-container{
+            @include mixins.centered-content;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+    
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .logo-merch-item{
+                width: 50px;
+            }
+
+        };
+
     };
 
-    .big-merch-container{
-        @include mixins.centered-content;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
 
-        a {
-            color: white;
-            text-decoration: none;
-        }
-    };
-
-    .logo-merch-item{
-        width: 50px;
-    }
 
 
 
